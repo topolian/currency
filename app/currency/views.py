@@ -1,9 +1,11 @@
 from currency.models import ContactUs
+
 from django.http import HttpResponse
 
 
 def hello_world(request):
     return HttpResponse("Hello World")
+
 
 def contact_us(request):
     contacts = ContactUs.objects.all()
