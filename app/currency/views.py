@@ -1,8 +1,6 @@
-from django.shortcuts import render
-
 from currency.models import ContactUs, Rate
 
-from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def index(request):
@@ -30,12 +28,6 @@ def contact_us(request):
 
 def rate_list(request):
     rates = Rate.objects.all()
-    #
-    # result = []
-    # for rate in rates:
-    #     result.append(
-    #         f"Id: {rate.id} Sale: {rate.sale} Buy: {rate.buy} Created: {rate.created} Source: {rate.source} Type: {rate.type}</br>"
-    #     )
 
     context = {
         'rate_list': rates,
