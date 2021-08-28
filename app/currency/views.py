@@ -2,7 +2,7 @@ from currency.forms import RateForm, SourceForm
 from currency.models import ContactUs, Rate, Source
 
 from django.http import HttpResponseRedirect
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import get_object_or_404, render
 
 
 def index(request):

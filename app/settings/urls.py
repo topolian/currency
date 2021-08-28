@@ -15,7 +15,7 @@ Including another URLconf
 """
 from currency.views import contact_us
 from currency.views import (
-    index, rate_list, rate_create,
+    index, rate_create, rate_list,
     source_create, source_delete, source_details, source_list, source_update
 )
 
