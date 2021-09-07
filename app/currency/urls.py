@@ -1,9 +1,9 @@
 from currency.views import (
-    contact_us,
     RateCreateView, RateDetailView, RateListView,
     SourceCreateView, SourceDeleteView, SourceDetailsView,
-    SourceListView, SourceUpdateView
+    SourceListView, SourceUpdateView, contact_us
 )
+
 from django.urls import path
 
 app_name = 'currency'
