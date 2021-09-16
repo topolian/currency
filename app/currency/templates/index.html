@@ -3,9 +3,9 @@
 {% block main_content %}
 
 <div>
-    <a href="/rate/list/">Rate List</a><br>
-    <a href="/contact-us/">Contact Us</a><br>
-    <a href="/source/list/">Source List</a>
+    <a href="{% url 'currency:rate-list' %}">Rate List</a><br>
+    <a href="{% url 'currency:contact-us' %}">Contact Us</a><br>
+    <a href="{% url 'currency:source-list' %}">Source List</a>
 </div>
 
 Hello from index
