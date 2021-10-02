@@ -1,13 +1,17 @@
 {% extends 'base.html' %}
 
 {% block main_content %}
-<table border="1">
 
+<a href="{% url 'currency:contact-us-create' %}">Contact Us Create</a>
+<br>
+
+<table border="1">
   <thead>
     <th> ID </th>
     <th> Name </th>
     <th> Subject </th>
     <th> Message </th>
+    <th> Created </th>
   </thead>
 
   <tbody>
@@ -17,6 +21,7 @@
         <td>{{ contact.email_from }}</td>
         <td>{{ contact.subject }}</td>
         <td>{{ contact.message }}</td>
+        <td>{{ contact.created }}</td>
       </tr>
     {% endfor %}
   </tbody>
