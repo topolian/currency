@@ -175,7 +175,7 @@ class ContactUsCreateView(CreateView):
 
         full_email_body = f'''
         Email_from: {email_from}
-        Body: {body}    
+        Body: {body}
         '''
 
         send_mail(
